@@ -1,21 +1,13 @@
 {
     "version": 2,
-    "builds": [
-        {
-            "src": "Frontend/package.json",
-            "use": "@vercel/static-build",
-            "config": {
-                "distDir": "Frontend/dist"
-            }
-        },
-        {
-            "src": "api/index.js",
-            "use": "@vercel/node",
-            "config": {
-                "maxDuration": 30
-            }
+    "buildCommand": "cd Frontend && npm run build",
+    "outputDirectory": "Frontend/dist",
+    "installCommand": "npm install --prefix Frontend && npm install --prefix api",
+    "functions": {
+        "api/index.js": {
+            "maxDuration": 30
         }
-    ],
+    },
     "routes": [
         {
             "src": "/api/(.*)",
