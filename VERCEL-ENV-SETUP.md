@@ -16,8 +16,8 @@ NODE_ENV=production
 VITE_BACKEND_URL=https://health-bytes-1grlfbgwx-dineshdhayfule-5542s-projects.vercel.app
 
 # 🔐 Auth0 Configuration (Update with your actual values)
-VITE_AUTH0_DOMAIN=dev-3saa5w2monm3q0wf.us.auth0.com
-VITE_AUTH0_CLIENT_ID=KWfBmQUat9NjJUfkUEzjtyxcBfJ9eHxx
+VITE_AUTH0_DOMAIN=dev-60zi0xyy8c7q2hin.us.auth0.com
+VITE_AUTH0_CLIENT_ID=xaoj4WKWelAfgOTQgIOkmhjPsIvzDj3V
 
 ## 📝 Notes:
 # - Replace the Auth0 values with your actual domain and client ID

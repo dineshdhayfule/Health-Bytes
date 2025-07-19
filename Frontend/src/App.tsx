@@ -26,8 +26,8 @@ function App() {
 
   return (
     <Auth0Provider
-      domain={import.meta.env.VITE_AUTH0_DOMAIN || "dev-3saa5w2monm3q0wf.us.auth0.com"}
-      clientId={import.meta.env.VITE_AUTH0_CLIENT_ID || "KWfBmQUat9NjJUfkUEzjtyxcBfJ9eHxx"}
+      domain={import.meta.env.VITE_AUTH0_DOMAIN || "dev-60zi0xyy8c7q2hin.us.auth0.com"}
+      clientId={import.meta.env.VITE_AUTH0_CLIENT_ID || "xaoj4WKWelAfgOTQgIOkmhjPsIvzDj3V"}
       authorizationParams={{
         redirect_uri: window.location.origin
       }}
