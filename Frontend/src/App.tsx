@@ -17,7 +17,7 @@ import { DietProvider } from './Context/Calary';
 // Wrapper component to handle home page redirection
 const HomeWrapper = () => {
 
-  
+
   const { isAuthenticated } = useAuth0();
   return isAuthenticated ? <Navigate to="/food-recognition" replace /> : <Home />;
 };
@@ -26,47 +26,47 @@ function App() {
 
   return (
     <Auth0Provider
-      domain="dev-3saa5w2monm3q0wf.us.auth0.com"
-      clientId="KWfBmQUat9NjJUfkUEzjtyxcBfJ9eHxx"
+      domain={import.meta.env.VITE_AUTH0_DOMAIN || "dev-3saa5w2monm3q0wf.us.auth0.com"}
+      clientId={import.meta.env.VITE_AUTH0_CLIENT_ID || "KWfBmQUat9NjJUfkUEzjtyxcBfJ9eHxx"}
       authorizationParams={{
         redirect_uri: window.location.origin
       }}
     >
-<Router>
+      <Router>
         <div className="min-h-screen flex flex-col">
           <Header />
           <main className="flex-grow">
-          <DietProvider>  
-            <Routes>
-              <Route path="/" element={<HomeWrapper />} />
-              {/* <Route path="/home" element={<UserHome />} /> */}
+            <DietProvider>
+              <Routes>
+                <Route path="/" element={<HomeWrapper />} />
+                {/* <Route path="/home" element={<UserHome />} /> */}
 
-              <Route path="/tracking" element={
-                <ProtectedRoute>
-                  <Tracking />
-                </ProtectedRoute>
-              } />
-              <Route path="/meal-planning" element={
-                <ProtectedRoute>
-                  <MealPlanning />
-                </ProtectedRoute>
-              } />
-              <Route path="/exercise" element={
-                <ProtectedRoute>
-                  <Exercise />
-                </ProtectedRoute>
-              } />
-              <Route path="/food-recognition" element={
-                <ProtectedRoute>
-                  <FoodRecognitionNew />
-                </ProtectedRoute>
-              } />
-              <Route path="/recipes" element={
-                <ProtectedRoute>
-                  <Recipes />
-                </ProtectedRoute>
-              } />
-            </Routes>
+                <Route path="/tracking" element={
+                  <ProtectedRoute>
+                    <Tracking />
+                  </ProtectedRoute>
+                } />
+                <Route path="/meal-planning" element={
+                  <ProtectedRoute>
+                    <MealPlanning />
+                  </ProtectedRoute>
+                } />
+                <Route path="/exercise" element={
+                  <ProtectedRoute>
+                    <Exercise />
+                  </ProtectedRoute>
+                } />
+                <Route path="/food-recognition" element={
+                  <ProtectedRoute>
+                    <FoodRecognitionNew />
+                  </ProtectedRoute>
+                } />
+                <Route path="/recipes" element={
+                  <ProtectedRoute>
+                    <Recipes />
+                  </ProtectedRoute>
+                } />
+              </Routes>
             </DietProvider>
           </main>
           <Footer />

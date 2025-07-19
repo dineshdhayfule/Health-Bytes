@@ -12,6 +12,15 @@ global.genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 app.use(cors());
 app.use(express.json());
 
+// Health check endpoint for Docker
+app.get('/health', (req, res) => {
+    res.status(200).json({
+        status: 'OK',
+        timestamp: new Date().toISOString(),
+        service: 'HealthBites Backend'
+    });
+});
+
 const userroute = require('./route/userProfile');
 const mealroute = require('./route/meal');
 const analysisroute = require('./route/analysis');
