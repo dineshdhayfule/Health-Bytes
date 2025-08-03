@@ -2,7 +2,13 @@
 
 **A modern AI-powered health and nutrition tracking application built with React and Node.js**
 
+## 🌐 Live Demo
+**🚀 [View Live Application](https://health-bite.netlify.app/)**
+
+---
+
 ## 📋 Table of Contents
+- [Live Demo](#live-demo)
 - [Overview](#overview)
 - [Features](#features)
 - [Technology Stack](#technology-stack)
@@ -10,12 +16,16 @@
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Environment Variables](#environment-variables)
+- [Deployment](#deployment)
+- [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## 🎯 Overview
 
 Health Bytes is a comprehensive health and nutrition tracking application that combines AI-powered food recognition, meal planning, and wellness monitoring. Users can track their daily nutrition, plan meals, monitor exercise, and achieve their health goals with personalized recommendations.
+
+**🌟 Try it live at: [health-bite.netlify.app](https://health-bite.netlify.app/)**
 
 ## ✨ Features
 
@@ -66,6 +76,11 @@ Health Bytes is a comprehensive health and nutrition tracking application that c
 - **JWT** for authentication
 - **Multer** for file uploads
 - **bcrypt** for password hashing
+
+### **Deployment**
+- **Frontend**: Netlify
+- **Backend**: Vercel (Serverless Functions)
+- **Database**: MongoDB Atlas
 
 ## 🚀 Installation
 
@@ -124,7 +139,9 @@ npm run dev
 
 ## 🖥️ Usage
 
-1. **Access the Application**: Open http://localhost:5173
+1. **Access the Application**: 
+   - **Live**: https://health-bite.netlify.app/
+   - **Local**: http://localhost:5173
 2. **Sign Up/Login**: Use Auth0 authentication
 3. **Complete Profile**: Set your health goals and preferences
 4. **Track Meals**: Upload food images or manually log meals
@@ -180,9 +197,49 @@ DELETE /user/:id         - Delete user profile
 | `VITE_AUTH0_DOMAIN` | Auth0 domain | ✅ |
 | `VITE_AUTH0_CLIENT_ID` | Auth0 client ID | ✅ |
 
+## 🚀 Deployment
+
+### **Frontend (Netlify)**
+1. Connect your GitHub repository to Netlify
+2. Set build command: `npm run build`
+3. Set publish directory: `dist`
+4. Add environment variables in Netlify dashboard
+
+### **Backend (Vercel)**
+1. Deploy backend as serverless functions
+2. Configure environment variables
+3. Update CORS settings for Netlify domain
+
+### **Database (MongoDB Atlas)**
+- Cloud-hosted MongoDB database
+- Automatic scaling and backup
+
+**Live Application**: [https://health-bite.netlify.app/](https://health-bite.netlify.app/)
+
 ## 📱 Screenshots
 
-*Add screenshots of your application here*
+### **Homepage**
+![Homepage](https://via.placeholder.com/800x400/4F46E5/white?text=Health+Bytes+Homepage)
+
+### **Food Recognition**
+![Food Recognition](https://via.placeholder.com/800x400/10B981/white?text=AI+Food+Recognition)
+
+### **Meal Planning**
+![Meal Planning](https://via.placeholder.com/800x400/F59E0B/white?text=Smart+Meal+Planning)
+
+### **Progress Tracking**
+![Progress Tracking](https://via.placeholder.com/800x400/EF4444/white?text=Progress+Analytics)
+
+*Replace placeholder images with actual screenshots of your application*
+
+## 🎯 Project Highlights
+
+- ✅ **Full-stack application** with modern tech stack
+- ✅ **AI integration** for food recognition and meal planning
+- ✅ **Secure authentication** with Auth0
+- ✅ **Responsive design** for all devices
+- ✅ **Cloud deployment** on Netlify and Vercel
+- ✅ **Real-time data** with MongoDB Atlas
 
 ## 🤝 Contributing
 
@@ -200,13 +257,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Dinesh Dhayfule**
 - GitHub: [@dineshdhayfule](https://github.com/dineshdhayfule)
-- LinkedIn: [Your LinkedIn Profile]
+- LinkedIn: [https://www.linkedin.com/in/dinesh-dhayfule/]
+- Email: dineshdhayfule@gmail.com
+
 
 ## 🙏 Acknowledgments
 
 - Google Gemini AI for food recognition capabilities
 - Auth0 for authentication services
-- MongoDB for database services
+- MongoDB Atlas for database services
+- Netlify for frontend hosting
+- Vercel for backend deployment
 - All open-source contributors
 
 ## 📞 Support
@@ -216,3 +277,5 @@ For support, email your-email@example.com or create an issue in this repository.
 ---
 
 **⭐ Star this repository if you found it helpful!**
+
+**🌐 Live Demo: [health-bite.netlify.app](https://health-bite.netlify.app/)**
